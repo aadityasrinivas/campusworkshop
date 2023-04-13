@@ -4,6 +4,8 @@ This is a todo list App designed for Worshop.
 
 NOTE: Rename the gitignore file name as .gitignore after you clone the repo to you local system.
 
+README File modified
+
 ## Requirements
 
 ```
@@ -25,7 +27,7 @@ flask run
 
 handlers:
 
-# Static files to /images/... to files in static/images/... 
+# Static files to /images/... to files in static/images/...
 
 - url: /img
   static_dir: static/img
@@ -35,5 +37,3 @@ handlers:
 
 - url: /styles
   static_dir: static/styles
-
-
