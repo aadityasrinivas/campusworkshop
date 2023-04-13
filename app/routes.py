@@ -21,7 +21,6 @@ def update_status(task_id):
     """ recieved post requests for entry updates """
 
     data = request.get_json()
-
     try:
         if "status" in data:
             db_helper.update_status_entry(task_id, data["status"])
@@ -50,6 +49,7 @@ def create():
 @app.route("/fetch-max-id",methods=['GET'])
 def fetch_max_id():
     data = request.get_json()
+    
     result= db_helper.fetch_max_id()
     return jsonify(result)
 
